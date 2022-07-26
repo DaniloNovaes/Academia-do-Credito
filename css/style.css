@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/* HEADER */
+
+
+a:hover {
+ 
+    color:#F6B042;
+}
+   .emphasisMenu{
+    border-radius: 20px;
+    border-style:groove;
+    background: #1d4725d2;
+    color: rgba(255, 255, 255, 0.818);
+}
+
+
+
+.spanMenu{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 12px;
+}
+
+a:hover .spanMenu{
+    position: fixed;
+    display: block;
+    color: #F6B042;
+    border-top: 2px solid;
+} 
+
+a:hover .menuEquipe{
+    color: #F6B042;
+    width: 52px; 
+}
+
+a:hover .menuContato{
+    
+    width: 73px; 
+}
+a:hover .menuParceiro{
+    
+    width: 107px; 
+}
+
+a:hover .menuParceiro{
+    
+    width: 107px; 
+}
+
+a:hover .menuQuemSomos{
+    
+    width: 102px; 
+}
+
+
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Cinzel, serif;
+    font-size: 15px;
+    padding: 10px;
+    transition: all 250ms linear 0s;
+}
+
+header .container img{
+    height: 50px;
+}
+
+.container{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center ;
+    background-color: #533549;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+
+
+#btn-mobile{
+    display: none;
+   
+}
