@@ -1,6 +1,6 @@
 /*HEADER NAV*/
 
-@media (max-width: 899px){
+@media (max-width: 1000px){
 
 #btn-mobile{
     display: flex;
@@ -87,22 +87,25 @@
 }
 
 
-a:hover .spanMenu{
+}
+
+@media (max-width: 780px){ 
+
+    #btn-footer{
     display: none;
-}
-
-a:hover{
-
-    color: white;
-    background: #F6B042;
-}
-
-
-.emphasisMenu{
-    border-radius: 0%;
-    border-style: none;
-    background: #533549;
-    color: white;
-}
+     
+ }
 
 }
+
+@media (max-width: 600px){ 
+
+    
+    #address-footer{
+        font-size: 12px;
+        margin-top: 40px;   
+    }
+ 
+
+}
+
