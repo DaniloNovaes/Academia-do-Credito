@@ -109,3 +109,14 @@
 
 }
 
+@media (max-width: 400px){ 
+
+    
+    #address-footer{
+        font-size: 10px;
+        margin-top: 40px;   
+    }
+ 
+
+}
+
