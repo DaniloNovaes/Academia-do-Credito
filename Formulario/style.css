@@ -251,12 +251,12 @@ p{
 
     textarea{
         vertical-align: text-top;
-        width: 300px;
+        width: 220px;
         height: 200px;
     }
     
     input[type=text], input[type=mail]{
-        width: 300px;
+        width: 220px;
     }
     
     

@@ -126,10 +126,3 @@ margin-left: 20px;
 
 }
 
-#contato img{
-    height:40px; 
-    position:fixed; 
-    bottom:25px; 
-    right:25px; 
-    z-index:1000;
-}
