@@ -396,6 +396,10 @@ body{
     margin-top: 60px;
 }
 
+#btn-curso a b{
+    color: black;
+}
+
 
 
 /* Media Query */
@@ -407,7 +411,7 @@ body{
         flex-direction: row;
         height: 400px;
         margin: 0;
-        width: 90%;
+        width: 100%;
         border-radius: 0;
     }
     #curso .all-steps .steps-info{
