@@ -5,13 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./style.css"/>
     <title>Equipe</title>
 </head>
 
 <body>   
 
-    </section>
+    <header id="navegador_inicial">
+        <div class="container">
+            <img src="../assets/Logos/logo1.JPG" alt="logo"/> 
+            <form>
+                <a href="../index.html">
+                    <input type="button" id="btn-mainpage"/>
+                </a>
+            </form>
+                    <nav id="container-nav">
+                        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" 
+                                            aria-expanded="false">
+                            <span id="hamburguer"></span>
+                        </button>
+                        <ul class="menu" role="menu">
+                            <li>
+                                <a href="../QuemSomos/index.html">Quem Somos</a>
+                            </li>
+                            <li>
+                                <a href="../curso/index.html">Microcrédito</a>
+                            </li>
+                            <li>
+                                <a href="#SejaParceiro">Seja Parceiro</a>
+                            </li>
+                            <li>
+                                <a href="#footer">Contato</a>
+                            </li>
+                            <li>
+                                <a href="./equipe.html">Equipe</a>
+                            </li>
+                        </ul>
+                    </nav>
+        </div>
     
     <main id="equipe">    
         
@@ -48,7 +80,7 @@
                 </button>
 
                 <button class="botaoGit">
-                    <a href="https://github.com/DaniloNovaes" target="_blank">Git</a>
+                    <a href="https://github.com/DaniloNovaes" target="_blank">Github</a>
                 </button>
             </section>
 
@@ -82,7 +114,7 @@
                 </button>
 
                 <button class="botaoGit">
-                    <a href="https://github.com/marcelessilva" target="_blank">Git</a>
+                    <a href="https://github.com/marcelessilva" target="_blank">Github</a>
                 </button>
             </section>
 
@@ -117,7 +149,7 @@
                 </button>
 
                 <button class="botaoGit">
-                    <a href="https://github.com/ProfessorMAT" target="_blank">Git</a>
+                    <a href="https://github.com/ProfessorMAT" target="_blank">Github</a>
                 </button>
             </section>
 
@@ -152,7 +184,7 @@
                 </button>
 
                 <button class="botaoGit">
-                    <a href="https://github.com/kamarini" target="_blank">Git</a>
+                    <a href="https://github.com/kamarini" target="_blank">Github</a>
                 </button>                
             </section>
 
@@ -187,13 +219,30 @@
                 </button>
 
                 <button class="botaoGit">
-                    <a href="https://github.com/EduardoGomesJr1" target="_blank">Git</a>
+                    <a href="https://github.com/EduardoGomesJr1" target="_blank">Github</a>
                 </button>            
             </section>
 
         </div>
 
-    </main>    
+    </main>
+    
+    <footer id="footer">
+        <div><img src="../assets/android-chrome-192x192.png" alt="Academia do Crédito"></div>
+        <div>
+            <address id="address-footer">
+                <p>Contato (De seg/sex, das 10h às 17h)</p>
+                <p>(+55) 11 98696-0440 </p>
+                <p>E-mail: atend@academiadocredito.com</p>
+            </address>
+        </div>
+        <div id="div-footer"> 
+            <button id="btn-footer" type="button">
+                        <a href="#navegador_inicial"><b>Voltar ao início</b></a>
+                    </button>
+        </div>
+    </footer>
+    <script type="module" src="../js/menu.js"></script>
 
 </body>
 </html>

@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fauna+One&display=swap');
-
-
-
-
-
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
 *{
@@ -78,16 +73,27 @@ header .container img{
 
 
 /* MAIN */
-main {
-    margin-bottom: 100px;
+
+#frase-potencia{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: #533549;
+   
 }
 
-main .container-main{
+main {
+    margin-bottom: 10px;
+}
+
+
+.container-text{
     display: flex;
     align-items:flex-start;
     justify-content: space-between;
     max-width: 980px;
-    margin: 100px auto 0px auto;
+    margin: 100px auto 0px auto; 
+
 }
 
 h2{
@@ -97,21 +103,27 @@ h2{
     font-weight: bold;
 }
 
-#h3-main{
-    color: rgb(131,131,131);
-    font-size: 20px;
-    line-height: 28px;
-    margin: 10px 0;
-    text-align: justify;
-} 
 
 
-main .container-main img{
-    width: 600px;
+#foto1{
+  
+    width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
 }
+
+
+
 
 /* CARDS */
 
+#imgCards img{
+    width: 600px;
+}
+
+#banner1{
+    margin-top: 52px;
+}
 
 
 .cards {
@@ -121,13 +133,15 @@ main .container-main img{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
+    
 }
 
 .text--medium{
-    font-size: 16px;
+    font-size: 20px;
     line-height: 26px;
     font-weight: 400;
-    color: rgb(187,185,185);
+    color:#533549;
+    text-align:center;
 }
 
 .card{
@@ -137,13 +151,14 @@ main .container-main img{
     box-shadow: 5px 5px 15px -4px #000000;
     transition: all 0.3s ease 0s;
     border-radius: 10px;
+    background-color: #F6B042;
 }
 
 .card:hover{
     transform: translateY(-7px);
 }
 
-/*.image {
+.image {
     width: 100%;
     padding-top: 56.25%;
     overflow: hidden;
@@ -158,7 +173,7 @@ main .container-main img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+} 
 
 .content {
     margin:20px;
@@ -167,6 +182,29 @@ main .container-main img{
 .title{
     margin-bottom:0px;
 }
+
+
+
+#fot2{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#fot3{
+    margin-top: 70px;
+}
+
+#fot4{
+    margin-top: 150px;
+}
+
+#fot5{
+    margin-top: 150px;
+}
+#fot6{
+    margin-top: 80px;
+   
+} 
 
 
 /*FOOTER*/
