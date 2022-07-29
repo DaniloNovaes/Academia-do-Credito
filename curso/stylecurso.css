@@ -71,9 +71,16 @@ header .container img{
    
 } 
 
-@media (max-width: 1000px){
+@media (max-width: 1300px){
 
 
+        #btn-curso{
+            
+           margin-bottom: 15px; 
+        }
+        #segundoPasso{
+            font-size: 0.1rem;
+        }
     body {
       
     overflow-x: hidden;
