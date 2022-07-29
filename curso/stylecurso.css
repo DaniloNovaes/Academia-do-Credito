@@ -73,6 +73,12 @@ header .container img{
 
 @media (max-width: 1000px){
 
+
+    body {
+      
+    overflow-x: hidden;
+    } /*Para a responsividade do Mobile*/
+
     #btn-mobile{
         display: flex;
         padding: .5rem 1rem;
@@ -331,7 +337,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 50%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -407,11 +413,14 @@ body{
 
 
 @media only screen and (min-width: 768px) {
+
+ 
+
     #curso .steps-item {
         flex-direction: row;
         height: 400px;
         margin: 0;
-        width: 100%;
+        width: 90%;
         border-radius: 0;
     }
     #curso .all-steps .steps-info{
@@ -435,6 +444,9 @@ body{
         text-align: center;
        
     }
+
+
+   
    
 
 
