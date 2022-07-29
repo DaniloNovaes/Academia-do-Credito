@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
+
 }
 
 /* HEADER */
@@ -67,8 +68,7 @@ header .container img{
 
 #bodyHomepage{
     color: #f6b042;
-    background-color: #533549;
-    
+    background-color: #533549;    
 }
 
 #homepage{
@@ -78,35 +78,39 @@ header .container img{
     padding: 0;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    
-    
+    flex-direction: column;    
 }
 
-.banner {
+#banner {
     height: calc(100vh - 70px);
     width: 100%;
-    border: solid 1px #f6b042;    
-    
+    border: solid 1px #f6b042; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;       
 }
 
-.slogan {
-    height: 400px;
-    width: 100%;    
-    font-size: 35px;    
+#slogan h1 {
+    height: 200px;
+    width: 100%;            
     display: inherit;
-    padding: 70px;
-    align-content: center;
+    padding: 20px;
+    text-align: center;        
     font-family: "cinzel", sans-serif;
     border: solid 1px #f6b042;
     background-color: rgba(0, 0, 0, 0.4);
-    
-    
+    font-size: 30px;       
+}
+
+#slogan div {
+    display: flex;
+    text-align: center;
     
 }
 
-.slogan h1  {
-    padding: 40px;
+h1 strong {
+    align-items: center;
+    text-align: center;
 }
 
 .frases-efeito h3, legend {
@@ -114,18 +118,20 @@ header .container img{
     padding: 20px;
     line-height: 1.8 ;
     font-family: "cinzel", sans-serif;
+    text-align: center;   
 }
 
 
 
 #container {
     display: flex;
-    flex-direction: column;     
+    flex-direction: column;   
 }
 
 .item {
     display: flex;
 }
+
 
 #item1 div, #item3 div, #item5 div {
     height: 400px;
@@ -139,7 +145,7 @@ header .container img{
     border: solid 1px #f6b042;
 }
 
-#item2 div, #item4 div {
+#item4 div {
     height: 400px;
     width: 100%;    
     justify-content: center;
@@ -157,38 +163,31 @@ header .container img{
     flex-direction: row-reverse;
 }
 
+#banner {
+    background-image: url("../assets/img/banner.jpg");
+}
+
 #foto1 {
-   background-image: url("../assets/img/mulheres-empreendedoras.jpg"); 
-    
+    background-image: url("../assets/img/artesas-brasileiras1.jpg");   
 }
-
-
 #foto3 {
-    background-image: url("../assets/img/microempreendedora.jpg");
+    background-image: url("../assets/img/trabalho-equipe.jpg");
 }
-
-
 #foto5 {
     background-image: url("../assets/img/vendedora.jpg");     
 }
-
 
 .frases-efeito {
     display: inherit;
     font-family: "cinzel", sans-serif;
     font-size: 26px; 
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
-h1 {
-    font-family: inherit;
-    font-size: inherit;
-    display: inherit;
-    
-} 
 
 /* FUNCIONALIDADES */
+
+
 
 .button {
     display:inline-block;
@@ -201,20 +200,15 @@ h1 {
     padding:10px 30px;
     margin-top:30px;
     border-radius:20px; 
-    font-family: "cinzel", sans-serif;   
-      
+    font-family: "cinzel", sans-serif;         
 }
 
 .frases-efeito a:hover{
     background: #F6B042;
-    color: #fff;
-
-  
+    color: #fff;  
 }
 
-@media (max-width: 450px) {
 
-}
 
 
   
@@ -267,128 +261,14 @@ footer{
 
 }
 
-/*HEADER NAV*/
-
-@media (max-width: 1000px){
-
-#btn-mobile{
-    display: flex;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: .5rem;
-}
-
-#hamburguer{
-  display: block;
-  color: #F6B042;
-  border-top: 2px solid;
-  width: 20px;  
-}
-
-#hamburguer::after, #hamburguer::before{
- content: '';
- display: block;  
- width: 20px;
- height: 2px;
- background: currentColor; 
- margin-top: 5px;
- transition: .3s;
- position: relative;
-}
-
-#container-nav.active #hamburguer{
-   border-top: none;   
-}
-
-#container-nav.active #hamburguer::before{
-   transform: rotate(135deg);   
-}
-
-#container-nav.active #hamburguer::after{
-  transform: rotate(-135deg);
-  top: -7px; /* Para alinhar o X. No entanto, precisa do position Relative em 
-                #hamburguer::after, #hamburguer::before para funcionar */
-}
-
-#container-nav{
-    margin-bottom: 6px;
-}
-
-.menu{
-    display: none;
-    position: absolute;
-    margin-top: 22px;
-    flex-direction: column;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    left: 100%;
-    transform: translateX(100vw);
-    transition: 0.5s ease transform;
-}
-
-.menu>li {
-    
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-    width: 100%;
-    color: #F6B042;
-    background-color: #533549;
-    border-radius: 5px;
-    border: 1px solid whitesmoke;
-}
-
-.menu li a {
-    flex: 1;
-    text-align: center;
-}
 
 
-#container-nav.active .menu{
-    display: block;
-    transform: translateX(-100vw);
-    transition: 0.5s ease transform;
-    
-}
 
-
-}
-
-@media (max-width: 780px){ 
-
-    #btn-footer{
-    display: none;
-     
- }
-
-}
-
-@media (max-width: 600px){ 
 
     
-    #address-footer{
-        font-size: 12px;
-        margin-top: 40px;   
-    }
- 
+  
+  
 
-}
-
-@media (max-width: 400px){ 
 
     
-    #address-footer{
-        font-size: 9px;
-        margin-top: 30px;   
-    }
-
-    #footer img{
-        height: 100px;
-        margin-left: 5px;
-        } 
-
-}
+    
